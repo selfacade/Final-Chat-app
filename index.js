@@ -38,10 +38,11 @@ const server = app.listen(443, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://jaineek-chat-app.onrender.com",
+    origin: ["https://jaineek-chat-app.onrender.com", "https://chatapp-jaineek.onrender.com"],
     credentials: true,
   },
 });
+
 
 global.onlineUsers = new Map();
 io.on("connection", (socket) => {
