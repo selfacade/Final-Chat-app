@@ -33,8 +33,8 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
-const server = app.listen(443, () =>
-  console.log(`Server started on 443`)
+const server = app.listen(process.env.PORT, () =>
+  console.log(`Server started on ${process.env.PORT}`)
 );
 const io = socket(server, {
   cors: {
