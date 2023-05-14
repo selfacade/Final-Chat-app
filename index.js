@@ -36,6 +36,7 @@ app.get("*", function(req, res) {
 const server = app.listen(process.env.PORT, () =>
   console.log(`Server started on ${process.env.PORT}`)
 );
+
 const io = socket(server, {
   cors: {
     origin: "https://jaineek-chat-app.onrender.com",
