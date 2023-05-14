@@ -38,7 +38,7 @@ const server = app.listen(443, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://jaineek-chat.onrender.com/",
+    origin: "https://jaineek-chat-app.onrender.com/",
     credentials: true,
   },
 });
