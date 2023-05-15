@@ -39,7 +39,7 @@ const server = app.listen(process.env.PORT, () =>
 
 const io = socket(server, {
   cors: {
-    origin: "https://jaineek-chat-app.onrender.com:5000",
+    origin: "https://jaineek-chat-app.onrender.com",
     credentials: true,
   },
 });
